@@ -4,7 +4,7 @@ import geni.rspec.pg as rspec
 # Create the first XenVM
 request = portal.context.makeRequestRspec()
 node1 = request.XenVM("node1")
-node1.disk_image = "urn:publicid:IDN+utah.cloudlab.us+image+ece69500mlcc-PG0:wenruhe"
+node1.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU18-64-STD"
 node1.routable_control_ip = "true"
 
 node1.addService(rspec.Execute(shell="/bin/sh", command="sudo apt update"))
